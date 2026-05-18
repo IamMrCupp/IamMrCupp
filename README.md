@@ -42,4 +42,4 @@ Tech I live in: `Kubernetes` `Rust` `Go` `Python` `Terraform` `Helm` `Flux` `Lin
 
 [mrcupp.com](https://mrcupp.com) · [linkedin.com/in/mrcupp](https://linkedin.com/in/mrcupp) · [linktr.ee/IamMrCupp](https://linktr.ee/IamMrCupp)
 
-Ko-fi / Buy Me a Coffee if something I built helped you out — links on the Linktree.
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/IamMrCupp) [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/IamMrCupp)
