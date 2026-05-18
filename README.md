@@ -1,6 +1,6 @@
 # hey, i'm aaron. 👋
 
-SRE by trade. Bass music by compulsion. Building things at the intersection of sound, light, and infrastructure since before it was cool.
+Senior Infrastructure Engineer by trade. Bass music by compulsion. Building things at the intersection of sound, light, and infrastructure since before it was cool.
 
 Founder of **[Tech-Noid Systems](https://tech-noid.net)** — a bass music collective, internet radio station, sound system, and general chaos engine running since 2008. Based in West Sacramento, CA. Performing DJ (Autonomic · Halftime DnB · Grey Area) and VJ. NorCal DnB scene.
 
