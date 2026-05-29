@@ -21,9 +21,9 @@ The umbrella for everything TNS — radio infrastructure, web presence, tooling,
 
 ## day job stuff
 
-30+ years in computers and electronics. Currently doing senior SRE/DevOps work: 5-node ARM64 Kubernetes cluster (self-hosted, 2Gbps fiber), Flux GitOps, HAProxy → MetalLB → nginx ingress. I care a lot about reliability, observability, and not being paged at 3am.
+30+ years in computers and electronics. Senior Infrastructure Engineer doing the full stack of SRE/DevOps work: Terraform/IaC, Linux administration, Python/Go/Rust development, heavy GCP, Kubernetes (cloud and bare metal), networking, and yes — on-call. I care a lot about reliability, observability, and not being paged at 3am.
 
-Tech I live in: `Kubernetes` `Rust` `Go` `Python` `Terraform` `Helm` `Flux` `Linux`
+Tech I live in: `Terraform` `GCP` `Kubernetes` `Linux` `Python` `Go` `Rust` `Networking`
 
 ---
 
