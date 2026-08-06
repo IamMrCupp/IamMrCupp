@@ -16,7 +16,7 @@ Founder of **[Tech-Noid Systems](https://tech-noid.net)** — a bass music colle
 
 ### 🔬 the bench
 
-Board-level repair — microscope, hot air, thermal camera, and a lot of very small tweezers. The software side is a stack I'm building for myself: a HUD that composites microscope, thermal, and instrument telemetry into a single v4l2loopback feed for OBS, an intake tracker for boards coming in, and a parts inventory that exposes a REST API the rest of it consumes. All private for now — it's held together with assumptions about my specific bench, and it'd be a bad time for anyone else.
+Microsoldering and board-level repair — microscope, hot air, thermal camera, and a lot of very small tweezers. The software side is a small stack of bench utilities I'm building for myself: a telemetry HUD that feeds OBS, an intake tracker for boards coming in, and a parts inventory the rest of it reads from. All private for now — it's held together with assumptions about my specific bench, and it'd be a bad time for anyone else.
 
 The printed fixtures that hold it together *are* public — see below.
 
