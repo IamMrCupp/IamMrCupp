@@ -8,14 +8,37 @@ Founder of **[Tech-Noid Systems](https://tech-noid.net)** — a bass music colle
 
 ## what i'm actually building
 
-### 🔊 [audiophore](https://github.com/audiophore)
-A Rust-based real-time bridge between VJ software and your whole lighting ecosystem — Hue, WLED, DMX, lasers. Tauri + Svelte native app, pluggable input adapters, mlua scripting. It started as "I want my lights to react to my music" and turned into an actual project.
+### 🔊 sound & light
 
-### 📦 [claude-project-kit](https://github.com/IamMrCupp/claude-project-kit)
-Behavioral scaffolding and session conventions for AI coding workflows. Markdown-based context files, structured handoff docs, and sane defaults for working with AI assistants on real projects. Open source. Use it.
+**[audiophore](https://github.com/audiophore/audiophore)** — a low-latency Rust bridge from Synesthesia to every light in the room. Hue Entertainment, Nanoleaf, WLED over sACN/DDP, Art-Net DMX, Ether Dream lasers, OSC. Tauri + Svelte native app, pluggable input adapters, mlua scripting. It started as "I want my lights to react to my music" and turned into an actual project. The [brand kit](https://github.com/audiophore/branding) is public too — logos, wordmark, and palette, all reproducibly generated from one `brand.toml`.
 
-### 📡 [Tech-Noid Systems org](https://github.com/Tech-Noid-Systems)
-The umbrella for everything TNS — radio infrastructure, web presence, tooling, and miscellaneous experiments. Kubernetes, Flux GitOps, Icecast, the works.
+**[obs-radio-output](https://github.com/Tech-Noid-Systems/obs-radio-output)** — a native OBS Studio plugin that streams audio straight to Icecast and SHOUTcast. The usual answer is a second encoder app and a virtual audio cable; this is one less thing to babysit mid-set. Lives in the [Tech-Noid Systems](https://github.com/Tech-Noid-Systems) org alongside the radio infrastructure — Kubernetes, Flux GitOps, Icecast, the works.
+
+### 🔬 the bench
+
+Board-level repair — microscope, hot air, thermal camera, and a lot of very small tweezers. The software side is a stack I'm building for myself: a HUD that composites microscope, thermal, and instrument telemetry into a single v4l2loopback feed for OBS, an intake tracker for boards coming in, and a parts inventory that exposes a REST API the rest of it consumes. All private for now — it's held together with assumptions about my specific bench, and it'd be a bad time for anyone else.
+
+The printed fixtures that hold it together *are* public — see below.
+
+### 🖨️ printing & fixtures
+
+**[3d-printer-models](https://github.com/IamMrCupp/3d-printer-models)** — parametric OpenSCAD, printed, then published as STL plus source. Mostly things that hold other things: a bench cleaning station, an instrument tray for the Owon SPM8104, a rotary tool station, a UV mask station, a drybox splitter stand, a VJ rig stand. CC BY-NC.
+
+**[SnapmakerU1-Firmware-Helper-Scripts](https://github.com/IamMrCupp/SnapmakerU1-Firmware-Helper-Scripts)** — scripts for patching custom filament profiles into the Snapmaker U1 GUI binary, plus RFID/NFC utilities for when spool detection starts lying to you.
+
+**[OpenSpool NFC tag generator](https://github.com/IamMrCupp/OpenSpool-Filament-NFC-Tag-Generator-iOS-App)** — an iOS app for writing OpenSpool filament tags from your phone, covering the full extended field set the U1 understands.
+
+### 🛠️ tools & infra
+
+**[annoybots](https://github.com/IamMrCupp/annoybots)** — eggdrop and BMotion, rebuilt as one Go binary. IRC, Twitch, and Discord all at once, a shared Redis bus so the bots behave like an actual botnet, a Markov brain, a cross-platform partyline, and eggdrop-style channel keeping. Distroless image, GitOps-deployed to Kubernetes, because of course it is.
+
+**[claude-project-kit](https://github.com/IamMrCupp/claude-project-kit)** — behavioral scaffolding and session conventions for AI coding workflows. Working-folder templates, structured handoff docs, and sane defaults for working with AI assistants on real projects. The templates aren't the point — what they do *to* the assistant is. Open source. Use it.
+
+**[pwnagotchi-plugins](https://github.com/IamMrCupp/pwnagotchi-plugins)** — custom plugins for pwnagotchi units, built against the jayofelony image.
+
+### 📎 odds and ends
+
+**[recipe-card-maker](https://github.com/IamMrCupp/recipe-card-maker)** — markdown in, kitchen-binder PDFs and 4×6 recipe-tin cards out. **[mrcupp-project](https://github.com/IamMrCupp/mrcupp-project)** — the Hugo source behind [mrcupp.com](https://mrcupp.com), custom shortcodes and all.
 
 ---
 
