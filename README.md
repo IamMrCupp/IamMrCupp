@@ -38,7 +38,9 @@ The printed fixtures that hold it together *are* public — see below.
 
 ### 📎 odds and ends
 
-**[recipe-card-maker](https://github.com/IamMrCupp/recipe-card-maker)** — markdown in, kitchen-binder PDFs and 4×6 recipe-tin cards out. **[mrcupp-project](https://github.com/IamMrCupp/mrcupp-project)** — the Hugo source behind [mrcupp.com](https://mrcupp.com), custom shortcodes and all.
+**[recipe-card-maker](https://github.com/IamMrCupp/recipe-card-maker)** — a personal recipe collection where markdown is the source of truth. Generates full-page PDFs for the kitchen binder and 4×6 cards for the recipe tin. Containerized, because apparently that's how I make cookies now.
+
+**[mrcupp-project](https://github.com/IamMrCupp/mrcupp-project)** — the Hugo source behind [mrcupp.com](https://mrcupp.com). Markdown pages, a pile of custom shortcodes, and some framework hacks I'd rather not describe.
 
 ---
 
