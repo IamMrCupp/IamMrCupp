@@ -22,7 +22,9 @@ The printed fixtures that hold it together *are* public — see below.
 
 ### 🖨️ printing & fixtures
 
-**[3d-printer-models](https://github.com/IamMrCupp/3d-printer-models)** — parametric OpenSCAD, printed, then published as STL plus source. Mostly things that hold other things: a bench cleaning station, an instrument tray for the Owon SPM8104, a rotary tool station, a UV mask station, a drybox splitter stand, a VJ rig stand. CC BY-NC.
+**[3d-printer-models](https://github.com/IamMrCupp/3d-printer-models)** — parametric OpenSCAD, printed, then published as STL plus source. Mostly things that hold other things: a bench cleaning station, an instrument tray for the Owon SPM8104, a rotary tool station, a UV mask station, a drybox splitter stand, a VJ rig stand. Models are CC BY-NC; the library and tooling are MIT, so you can build on them.
+
+**[clickfinity-openscad](https://github.com/IamMrCupp/clickfinity-openscad)** — magnet-free Gridfinity baseplates. Flexible latch tongues catch a standard bin foot instead of magnets, plates join edge-to-edge with underside bowtie keys, and the whole thing is parametric — one command gets you any grid size. Validated on PETG. Every release ships ready-to-print STLs, so you don't need OpenSCAD unless you want your own dimensions.
 
 **[SnapmakerU1-Firmware-Helper-Scripts](https://github.com/IamMrCupp/SnapmakerU1-Firmware-Helper-Scripts)** — scripts for patching custom filament profiles into the Snapmaker U1 GUI binary, plus RFID/NFC utilities for when spool detection starts lying to you.
 
@@ -33,6 +35,8 @@ The printed fixtures that hold it together *are* public — see below.
 **[annoybots](https://github.com/IamMrCupp/annoybots)** — eggdrop and BMotion, rebuilt as one Go binary. IRC, Twitch, and Discord all at once, a shared Redis bus so the bots behave like an actual botnet, a Markov brain, a cross-platform partyline, and eggdrop-style channel keeping. Distroless image, GitOps-deployed to Kubernetes, because of course it is.
 
 **[claude-project-kit](https://github.com/IamMrCupp/claude-project-kit)** — behavioral scaffolding and session conventions for AI coding workflows. Working-folder templates, structured handoff docs, and sane defaults for working with AI assistants on real projects. The templates aren't the point — what they do *to* the assistant is. Open source. Use it.
+
+**[apptracker](https://github.com/IamMrCupp/apptracker)** — a self-hosted job application and networking tracker. Most of them are browser extensions that trap your data in one browser on one machine; this one is a single static Go binary with the web UI baked in and pure-Go SQLite behind it, so it runs in your own cluster and follows you across devices. Distroless image, optional password auth, one file to back up.
 
 **[pwnagotchi-plugins](https://github.com/IamMrCupp/pwnagotchi-plugins)** — custom plugins for pwnagotchi units, built against the jayofelony image.
 
