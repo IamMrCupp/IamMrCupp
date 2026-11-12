@@ -18,13 +18,13 @@ Founder of **[Tech-Noid Systems](https://tech-noid.net)** — a bass music colle
 
 Microsoldering and board-level repair — microscope, hot air, thermal camera, and a lot of very small tweezers. The bench is now **[YOLO Electronics Repair](https://yolorepair.com)**, my home-based repair shop in West Sacramento — [yolorepair](https://github.com/yolorepair) on GitHub, @yolo.repair on [Instagram](https://instagram.com/yolo.repair), [Threads](https://www.threads.net/@yolo.repair), and [Facebook](https://www.facebook.com/yolo.repair).
 
-The software that runs it is mine. benchhud and bench-recon are source-available under the [PolyForm Small Business License](https://polyformproject.org/licenses/small-business/1.0.0). bench-parts and benchhud-intake aren't public yet, so they link to their pages.
+The software that runs it is mine, and all four bench tools are source-available under the [PolyForm Small Business License](https://polyformproject.org/licenses/small-business/1.0.0).
 
 **[benchhud](https://github.com/IamMrCupp/benchhud)** — the bench's command center. Live scope feed, a thermal camera registered right onto the scope image, and instrument telemetry, all in one window instead of three — and composited to a virtual camera, so it's also the stream. It started as "I want to see which part is overheating without looking away from the scope."
 
-**[bench-parts](https://mrcupp.com/page/bench-parts/)** — the parts inventory. Knowing you have the part is half of quoting a repair. A tablet-friendly app plus a REST API that benchhud reads, so stock shows up on the HUD. Running on the cluster.
+**[bench-parts](https://github.com/IamMrCupp/bench-parts)** — the parts inventory. Knowing you have the part is half of quoting a repair. A tablet-friendly app plus a REST API that benchhud reads, so stock shows up on the HUD. Running on the cluster.
 
-**[benchhud-intake](https://mrcupp.com/page/benchhud-intake/)** — the front door for incoming jobs. It's a separate service for one reason: anything benchhud can see might end up on a stream, so customer data lives nowhere near it.
+**[benchhud-intake](https://github.com/IamMrCupp/benchhud-intake)** — the front door for incoming jobs. It's a separate service for one reason: anything benchhud can see might end up on a stream, so customer data lives nowhere near it.
 
 **[bench-recon](https://github.com/IamMrCupp/bench-recon)** — the system of record for hardware, automotive, and IoT pentest engagements: scope, authorization, targets, an append-only findings log, firmware dumps. FastAPI + SQLite, self-hosted, LAN-only. The code is public; the engagement data stays on the bench. benchhud only ever gets a ref-safe projection, so nothing identifying ends up on stream.
 
