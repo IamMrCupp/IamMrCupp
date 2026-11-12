@@ -16,13 +16,21 @@ Founder of **[Tech-Noid Systems](https://tech-noid.net)** — a bass music colle
 
 ### 🔬 the bench
 
-Microsoldering and board-level repair — microscope, hot air, thermal camera, and a lot of very small tweezers. The software that runs it is mine, and it's private for now while I settle how the source gets shared. Each piece has a page:
+Microsoldering and board-level repair — microscope, hot air, thermal camera, and a lot of very small tweezers. The bench is now **[YOLO Electronics Repair](https://yolorepair.com)**, my home-based repair shop in West Sacramento — [yolorepair](https://github.com/yolorepair) on GitHub, @yolo.repair on [Instagram](https://instagram.com/yolo.repair), [Threads](https://www.threads.net/@yolo.repair), and [Facebook](https://www.facebook.com/yolo.repair).
 
-**[benchhud](https://mrcupp.com/page/benchhud/)** — the bench's command center. Live scope feed, a thermal camera registered right onto the scope image, and instrument telemetry, all in one window instead of three — and composited to a virtual camera, so it's also the stream. It started as "I want to see which part is overheating without looking away from the scope."
+The software that runs it is mine, and all four bench tools are source-available under the [PolyForm Small Business License](https://polyformproject.org/licenses/small-business/1.0.0).
 
-**[bench-parts](https://mrcupp.com/page/bench-parts/)** — the parts inventory. Knowing you have the part is half of quoting a repair. A tablet-friendly app plus a REST API that benchhud reads, so stock shows up on the HUD. Running on the cluster.
+**[benchhud](https://github.com/IamMrCupp/benchhud)** — the bench's command center. Live scope feed, a thermal camera registered right onto the scope image, and instrument telemetry, all in one window instead of three — and composited to a virtual camera, so it's also the stream. It started as "I want to see which part is overheating without looking away from the scope."
 
-**[benchhud-intake](https://mrcupp.com/page/benchhud-intake/)** — the front door for incoming jobs. It's a separate service for one reason: anything benchhud can see might end up on a stream, so customer data lives nowhere near it.
+**[bench-parts](https://github.com/IamMrCupp/bench-parts)** — the parts inventory. Knowing you have the part is half of quoting a repair. A tablet-friendly app plus a REST API that benchhud reads, so stock shows up on the HUD. Running on the cluster.
+
+**[benchhud-intake](https://github.com/IamMrCupp/benchhud-intake)** — the front door for incoming jobs. It's a separate service for one reason: anything benchhud can see might end up on a stream, so customer data lives nowhere near it.
+
+**[bench-recon](https://github.com/IamMrCupp/bench-recon)** — the system of record for hardware, automotive, and IoT pentest engagements: scope, authorization, targets, an append-only findings log, firmware dumps. FastAPI + SQLite, self-hosted, LAN-only. The code is public; the engagement data stays on the bench. benchhud only ever gets a ref-safe projection, so nothing identifying ends up on stream.
+
+**[burnwright](https://github.com/IamMrCupp/burnwright)** — an open-source, cross-platform GUI for XGecu/MiniPRO chip programmers (T48, T56, T76, TL866). Rust + Tauri on top of minipro, so there's no closed-source vendor app in the loop. GPLv3. Open-source laptop EC flashing is [on the roadmap](https://github.com/IamMrCupp/burnwright/issues/36).
+
+**[pcie-gpu-test-rig](https://github.com/IamMrCupp/pcie-gpu-test-rig)** — power a graphics card with no motherboard. A fused, switched, metered 12 V box between a current-limited bench supply and a PCIe riser. Put a dead card on it and in thirty seconds you know whether it draws nothing, idles, or drags the supply into current limit. KiCad schematic + build guide, MIT.
 
 **[OpenBoardView](https://mrcupp.com/page/openboardview/)** — not mine, but I patched it. Cross-probing — click a part on the board, the schematic PDF jumps to it — never worked on macOS. Now it does, via a PDF bridge I've sent [upstream](https://github.com/OpenBoardView/OpenBoardView/pull/363).
 
@@ -79,6 +87,6 @@ Tech I live in: `Terraform` `AWS` `GCP` `Azure` `Kubernetes` `Linux` `Python` `G
 
 ## find me
 
-[mrcupp.com](https://mrcupp.com) · [resume](https://mrcupp.com/page/resume/) · [linkedin.com/in/mrcupp](https://linkedin.com/in/mrcupp) · [twitch.tv/iammrcupp](https://www.twitch.tv/iammrcupp) · [youtube.com/@IamMrCupp](https://www.youtube.com/@IamMrCupp) · [linktr.ee/IamMrCupp](https://linktr.ee/IamMrCupp)
+[mrcupp.com](https://mrcupp.com) · [yolorepair.com](https://yolorepair.com) · [resume](https://mrcupp.com/page/resume/) · [linkedin.com/in/mrcupp](https://linkedin.com/in/mrcupp) · [twitch.tv/iammrcupp](https://www.twitch.tv/iammrcupp) · [youtube.com/@IamMrCupp](https://www.youtube.com/@IamMrCupp) · [linktr.ee/IamMrCupp](https://linktr.ee/IamMrCupp)
 
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/IamMrCupp) [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/IamMrCupp)
