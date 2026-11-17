@@ -40,7 +40,7 @@ The bench is going on camera — follow on [Twitch](https://www.twitch.tv/iammrc
 
 ### 🖨️ printing & making
 
-**[3d-printer-models](https://github.com/IamMrCupp/3d-printer-models)** — thirty-two printable models, kept as parametric OpenSCAD source so you can regenerate them, not just download a fixed STL. Each one ships its own versioned release. Most of them hold the bench together: hot-air nozzle holders, soldering station mounts, a BGA rack, a thermal-cam mount, a heat-gun holder, spools for solder and wick. Models are CC BY-NC; the library and tooling are MIT, so you can build on them.
+**[3d-printer-models](https://github.com/IamMrCupp/3d-printer-models)** — thirty-eight printable models, kept as parametric OpenSCAD source so you can regenerate them, not just download a fixed STL. Each one ships its own versioned release. Most of them hold the bench together: hot-air nozzle holders, soldering station mounts, a BGA rack, a thermal-cam mount, a heat-gun holder, spools for solder and wick. Models are CC BY-NC (one remix is BY-NC-SA); the library and tooling are MIT, so you can build on them.
 
 **[clickfinity-openscad](https://github.com/IamMrCupp/clickfinity-openscad)** — magnet-free Gridfinity baseplates. Flexible latch tongues catch a standard bin foot instead of magnets, plates join edge-to-edge with underside bowtie keys, and the whole thing is parametric — one command gets you any grid size. It clicks, and it tiles. Every release ships ready-to-print STLs.
 
