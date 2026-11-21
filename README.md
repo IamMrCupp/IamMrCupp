@@ -20,9 +20,9 @@ Microsoldering and board-level repair — microscope, hot air, thermal camera, a
 
 The software that runs it is mine, and the four bench apps are open source under [AGPL-3.0](https://www.gnu.org/licenses/agpl-3.0.html).
 
-**[benchhud](https://github.com/IamMrCupp/benchhud)** — the bench's command center. Live scope feed, a thermal camera registered right onto the scope image, and instrument telemetry, all in one window instead of three — and composited to a virtual camera, so it's also the stream. It started as "I want to see which part is overheating without looking away from the scope."
+**[benchhud](https://github.com/IamMrCupp/benchhud)** — the bench's command center. Live scope feed, a thermal camera registered right onto the scope image, instrument telemetry, SPI flash dumps, and readings compared against a known-good board — all in one window, and composited to a virtual camera, so it's also the stream. It started as "I want to see which part is overheating without looking away from the scope."
 
-**[bench-parts](https://github.com/IamMrCupp/bench-parts)** — the parts inventory. Knowing you have the part is half of quoting a repair. A tablet-friendly app plus a REST API that benchhud reads, so stock shows up on the HUD. Running on the cluster.
+**[bench-parts](https://github.com/IamMrCupp/bench-parts)** — the parts and test-gear inventory. Knowing you have the part is half of quoting a repair. Consumables get stock counts; durable test gear gets tracked as it's assigned out and returned. A tablet-friendly app plus a REST API that benchhud reads, so stock shows up on the HUD. Running on the cluster.
 
 **[benchhud-intake](https://github.com/IamMrCupp/benchhud-intake)** — the front door for incoming jobs. It's a separate service for one reason: anything benchhud can see might end up on a stream, so customer data lives nowhere near it.
 
@@ -52,13 +52,15 @@ The bench is going on camera — follow on [Twitch](https://www.twitch.tv/iammrc
 
 **[apptracker](https://github.com/IamMrCupp/apptracker)** — a self-hosted job application and networking tracker. Most of them trap your data in one browser on one machine; this one is a single static Go binary with the web UI baked in and pure-Go SQLite behind it, so it runs in your own cluster and follows you across devices.
 
-**[recipe-card-maker](https://github.com/IamMrCupp/recipe-card-maker)** — markdown recipes in, full-page binder PDFs and 4×6 recipe-tin cards out. Containerized, because apparently that's how I make cookies now.
+**[recipe-card-maker](https://github.com/IamMrCupp/recipe-card-maker)** — recipes in by hand or imported from a website, a photo, or a pasted social post; full-page binder PDFs and 4×6 recipe-tin cards out. Containerized, because apparently that's how I make cookies now.
 
 **[mrcupp-project](https://github.com/IamMrCupp/mrcupp-project)** — the Hugo source behind [mrcupp.com](https://mrcupp.com), where every project above has a longer write-up.
 
 ### 💬 chat & bots
 
 **[annoybots](https://github.com/IamMrCupp/annoybots)** — the eggdrop and BMotion era, rebuilt as one Go binary. IRC, Twitch, and Discord all at once, a shared Redis bus so the bots behave like an actual botnet, a Markov brain that still babbles, a cross-platform partyline, and eggdrop-style channel keeping. Distroless image, GitOps-deployed to Kubernetes, because of course it is.
+
+**[multichat](https://github.com/IamMrCupp/megarohas_multichat)** — not mine, but I forked it. [megarohas's original](https://github.com/megarohas/megarohas_multichat) already merges Twitch and YouTube chat into one OBS overlay with no API keys and no sign-in. The bench streams to both, so my fork adds the answering half: a reply dock with one box that sends to Twitch, YouTube, or both, plus a viewer-count bar.
 
 **[pwnagotchi-plugins](https://github.com/IamMrCupp/pwnagotchi-plugins)** — two small plugins for the little Wi-Fi-handshake Tamagotchi: an age readout the current image lost, and a pcap cleaner.
 
