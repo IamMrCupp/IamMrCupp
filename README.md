@@ -34,7 +34,7 @@ The software that runs it is mine, and the four bench apps are open source under
 
 **[pcie-gpu-test-rig](https://github.com/IamMrCupp/pcie-gpu-test-rig)** — power a graphics card with no motherboard. A fused, switched, metered 12 V box between a current-limited bench supply and a PCIe riser. Put a dead card on it and in thirty seconds you know whether it draws nothing, idles, or drags the supply into current limit. KiCad schematic + build guide, MIT.
 
-**[OpenBoardView](https://mrcupp.com/page/openboardview/)** — not mine, but I patched it. Cross-probing — click a part on the board, the schematic PDF jumps to it — never worked on macOS. Now it does, via a PDF bridge I've sent [upstream](https://github.com/OpenBoardView/OpenBoardView/pull/363).
+**[OpenBoardView](https://mrcupp.com/page/openboardview/)** — not mine, but I keep patching it. Cross-probing — click a part on the board, the schematic PDF jumps to it — never worked on macOS; a PDF bridge fixes that. Since then: opening KiCad and legacy `.bv` boards directly, and four parser fixes for GenCAD, ASC, XZZ, and CAD files. All [sent upstream](https://github.com/OpenBoardView/OpenBoardView/pulls?q=is%3Apr+author%3AIamMrCupp).
 
 The bench is going on camera — follow on [Twitch](https://www.twitch.tv/iammrcupp) or [YouTube](https://www.youtube.com/@IamMrCupp) to catch the first stream.
 
