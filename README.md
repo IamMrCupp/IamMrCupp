@@ -22,7 +22,7 @@ The software that runs it is mine, and the four bench apps are open source under
 
 **[benchhud](https://github.com/IamMrCupp/benchhud)** — the bench's command center. Live scope feed, a thermal camera registered right onto the scope image, instrument telemetry, SPI flash dumps, and readings compared against a known-good board — all in one window, and composited to a virtual camera, so it's also the stream. It started as "I want to see which part is overheating without looking away from the scope."
 
-**[bench-parts](https://github.com/IamMrCupp/bench-parts)** — the parts and test-gear inventory. Knowing you have the part is half of quoting a repair. Consumables get stock counts; durable test gear gets tracked as it's assigned out and returned. A tablet-friendly app plus a REST API that benchhud reads, so stock shows up on the HUD. Running on the cluster.
+**[bench-parts](https://github.com/IamMrCupp/bench-parts)** — the parts and test-gear inventory. Knowing you have the part is half of quoting a repair. Consumables get stock counts; durable test gear gets tracked as it's assigned out and returned. A tablet-friendly app plus a REST API that benchhud reads, so stock shows up on the HUD.
 
 **[benchhud-intake](https://github.com/IamMrCupp/benchhud-intake)** — the front door for incoming jobs. It's a separate service for one reason: anything benchhud can see might end up on a stream, so customer data lives nowhere near it.
 
